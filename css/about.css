@@ -61,9 +61,8 @@
 	color: var(--white);
 	border: none;
 	padding: 1rem 2rem;
-
 	font-family: "Inter Tight";
-	font-weight: 500;
+
 	cursor: pointer;
 	text-transform: lowercase;
 	width: 100%;
@@ -71,6 +70,7 @@
 
 	p {
 		font-size: 1rem !important;
+		font-weight: 500 !important;
 	}
 }
 .about-btn:hover {
