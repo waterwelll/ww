@@ -24,6 +24,13 @@
 	height: 100px;
 }
 
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
 .contact-section {
 	text-align: center;
 	padding: 250px;
@@ -53,11 +60,13 @@ section {
 
 /* Contact Section */
 .contact {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0rem 2rem;
+	padding: 0rem 0rem;
 	transition: 0.7s;
+	margin: 0;
 
 	h2 {
 		transition: 0.7s;
@@ -72,8 +81,9 @@ section {
 }
 
 .contact-container {
-	max-width: 60%;
-	margin: 0 auto;
+	/* Set a consistent width for the container */
+	margin: 0; /* Center the container horizontally */
+	text-align: center; /* Center text inside the container */
 }
 
 .contact-container h2 {
@@ -81,24 +91,33 @@ section {
 	font-weight: 500;
 	margin-bottom: 3rem;
 	text-align: center;
+	width: 100%; /* Ensure the header spans the full width of the container */
 }
 
 .contact-form {
-	min-width: 845px;
-	display: grid;
+	display: flex;
+	flex-direction: column; /* Stack inputs vertically */
 	gap: 1.5rem;
 	margin-bottom: 3rem;
+	contain: content;
+	width: 70vw !important; /* Ensure the form spans the full width of the container */
 }
 
+.form-group {
+	padding: 0;
+	margin: 0;
+}
 .form-group input,
 .form-group textarea {
-	width: 100%;
+	width: 100%; /* Ensure inputs and textarea span the full width of the container */
 	padding: 1rem;
 	background-color: rgb(240, 240, 240);
 	border: 1px solid var(--black);
 	font-family: inherit;
 	font-size: 0.8rem;
 	transition: 0.7s;
+	margin: 0 !important;
+	box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .form-group input {
@@ -136,7 +155,7 @@ section {
 	font-weight: 500;
 	cursor: pointer;
 	text-transform: lowercase;
-	width: 100%;
+	width: 100%; /* Make the button span the full width */
 	transition: 0.7s;
 }
 
@@ -148,9 +167,10 @@ section {
 
 .contact-info {
 	display: flex;
-	justify-content: center;
-	gap: 3rem;
-	padding: 5rem;
+	flex-direction: column; /* Stack contact info vertically */
+	align-items: center; /* Center items horizontally */
+	gap: 1rem;
+	padding: 2rem;
 }
 
 .contact-info a {
@@ -189,8 +209,34 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-	.contact-section {
-		padding: 250px 50px;
+	.contact-container {
+		max-width: 90%; /* Reduce the width for smaller screens */
+		margin: 0 auto; /* Center the container horizontally */
+		text-align: center; /* Center text inside the container */
+	}
+
+	.contact-container h2 {
+		font-size: 1.8rem; /* Adjust font size for smaller screens */
+		margin-bottom: 2rem; /* Reduce spacing */
+		text-align: center;
+	}
+
+	.contact-form {
+		width: 100%; /* Ensure the form spans the full width of the container */
+		margin: 0 auto; /* Center the form horizontally */
+		gap: 1rem; /* Reduce spacing between inputs */
+	}
+
+	.form-group input,
+	.form-group textarea {
+		width: 100%; /* Ensure inputs and textarea span the full width of the container */
+		padding: 0.8rem; /* Adjust padding for smaller screens */
+		box-sizing: border-box; /* Include padding and border in width calculation */
+	}
+
+	.submit-btn {
+		width: 100%; /* Ensure the button spans the full width */
+		padding: 0.8rem; /* Adjust padding for smaller screens */
 	}
 }
 
