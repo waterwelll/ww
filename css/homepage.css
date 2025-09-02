@@ -494,6 +494,7 @@ button:hover {
 	);*/
 
 	padding: 8vw 5vw;
+	padding-bottom: 2vw;
 	h1 {
 		color: rgb(209, 208, 208);
 		transition: 0.7s;
@@ -1363,4 +1364,54 @@ button:hover {
 	100% {
 		box-shadow: none;
 	}
+}
+
+.logo-gallery-section {
+	padding: 3rem 1rem;
+	background: #fafbfc;
+	text-align: center;
+
+	a {
+		color: #7e6bd4;
+	}
+}
+
+.logo-gallery-title {
+	padding: 8vw;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	font-family: "Montserrat", "Inter Tight", sans-serif;
+	color: #c9c9c9;
+}
+
+.logo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.logo-tile {
+	background: #fff;
+	border-radius: 1rem;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.007);
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 160px;
+	height: 160px;
+	transition: transform 0.2s;
+}
+
+.logo-tile:hover {
+	transform: translateY(-8px) scale(1.04);
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.007);
+}
+
+.logo-tile img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
