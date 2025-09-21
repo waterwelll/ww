@@ -1393,21 +1393,22 @@ button:hover {
 }
 
 .logo-tile {
-	background: #fff;
+	background: transparent;
 	border-radius: 1rem;
 	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.007);
 	padding: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 160px;
-	height: 160px;
-	transition: transform 0.2s;
+	width: 180px;
+	height: 180px;
+	transition: 0.6s;
 }
 
 .logo-tile:hover {
-	transform: translateY(-8px) scale(1.04);
-	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.007);
+	transform: translateY(-8px) scale(1.5);
+
+	transition: 0.5s;
 }
 
 .logo-tile img {

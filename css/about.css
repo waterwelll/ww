@@ -20,21 +20,21 @@
 	background-color: transparent;
 	text-align: center;
 	padding: 80px;
-	padding-top: 15vw !important;
+	padding-top: 100px !important;
 	padding-bottom: 10vw;
 	transition: 0.7s;
 
-	h3 {
-		font-family: "Krona one" !important;
-		color: #a0a0b6;
-		font-size: 2.5vw;
-		transition: 2s;
-		text-transform: uppercase;
+	h2 {
+		font-size: 2rem;
+		font-weight: 500;
+		margin-bottom: 3rem;
+		text-align: center;
+		width: 100%;
 	}
 	p {
 		padding: 0px 12vw;
 		font-size: 1.5vw;
-		font-weight: 400;
+		font-weight: 300;
 		color: #a0a0b6;
 		transition: 0.7s;
 	}
@@ -69,12 +69,13 @@
 	transition: 0.7s;
 
 	p {
+		color: #c1c1d4 !important;
 		font-size: 1rem !important;
 		font-weight: 500 !important;
 	}
 }
 .about-btn:hover {
-	letter-spacing: 2px;
+	letter-spacing: 5px;
 	transition: 0.7s;
 }
 @media screen and (max-width: 1000px) {
