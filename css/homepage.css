@@ -14,7 +14,7 @@
 	--limegreen: rgb(95, 206, 151);
 }
 
-logo .divspace {
+.divspace {
 	height: 200px;
 }
 
@@ -26,32 +26,8 @@ logo .divspace {
 	width: 100%;
 	margin: 0px 0vw;
 	transition: 0.7s;
-	background-color: ;
-
-	/*
-	background-image: -webkit-linear-gradient(
-		rgb(41, 43, 53),
-		rgb(38, 42, 61),
-		rgba(35, 43, 114, 0.411),
-		rgba(35, 43, 114, 0.527),
-		rgba(35, 43, 114, 0.411),
-		rgb(38, 42, 61),
-		rgb(41, 43, 53)
-	);*/
 }
 .main-section:hover {
-	/*
-	margin: 0px 10vw;
-	transition: 0.7s;
-	.headshot {
-		
-		width: 12vw; 
-		animation-name: glowblue;
-		animation-duration: 5s;
-		animation-iteration-count: infinite;
-		animation-timing-function: ease-in-out;
-		transition: 0.6s;
-	}*/
 	.introduction p {
 		transition: 0.7s;
 		font-size: 1.4vw;
@@ -215,6 +191,13 @@ body .click a {
 	background-color: rgb(31, 1, 201);
 	box-shadow: 0px 10px 50px -5px rgba(168, 91, 255, 0.637);
 	transition: 0.7s;
+
+	.hint {
+		p {
+			letter-spacing: 0.9px;
+			transition: 0.7s;
+		}
+	}
 }
 
 .card {
@@ -242,27 +225,33 @@ body .click a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: 0.6s;
+
 	p {
 		font-size: 0.5rem;
 		color: var(--lime2);
+		transition: 0.7s;
 	}
 }
 
 .card[for="c1"] {
-	background-image: url(../images/background-image.jpg);
+	background-image: url(../images/bgimage.jpg);
+	opacity: 0.9;
 }
 .card[for="c2"] {
 	background-image: url(../images/roofing.jpeg);
+	opacity: 0.9;
 }
 .card[for="c3"] {
 	background-image: url(../images/coverthree.jpg);
+	opacity: 0.9;
 }
 .card[for="c4"] {
 	background-image: url(../images/3.jpg);
+	opacity: 0.9;
 }
 .card[for="c5"] {
 	background-image: url(../images/7.jpg);
+	opacity: 0.9;
 }
 #ci1 {
 	transition: 0.7s;
@@ -280,6 +269,8 @@ body .click a {
 	transition: 0.7s;
 }
 #ci1:hover {
+	background-image: url(../images/bgimage.jpg);
+	opacity: 1;
 	#i1 {
 		animation-name: glowlime2;
 		animation-duration: 4.5s;
@@ -299,6 +290,7 @@ body .click a {
 	}
 }
 #ci2:hover {
+	opacity: 1;
 	#i2 {
 		animation-name: glowlime2;
 		animation-duration: 4.5s;
@@ -318,6 +310,7 @@ body .click a {
 	}
 }
 #ci3:hover {
+	opacity: 1;
 	#i3 {
 		animation-name: glowlime2;
 		animation-duration: 4.5s;
@@ -337,6 +330,7 @@ body .click a {
 	}
 }
 #ci4:hover {
+	opacity: 1;
 	#i4 {
 		animation-name: glowlime2;
 		animation-duration: 4.5s;
@@ -357,6 +351,7 @@ body .click a {
 	}
 }
 #ci5:hover {
+	opacity: 1;
 	#i5 {
 		animation-name: glowlime2;
 		animation-duration: 4.5s;
@@ -388,7 +383,7 @@ body .click a {
 		rgba(80, 80, 80, 0.315),
 		rgba(17, 17, 17, 0)
 	);
-	color: rgba(95, 95, 95, 0.473);
+	color: rgba(255, 255, 255, 0.219);
 	font-weight: 400;
 	font-family: jetbrains mono, Inter Tight, poppins, montserrat;
 	border-radius: 50%;
@@ -488,16 +483,6 @@ button:hover {
 
 /**Service-section*/
 .services-section {
-	/* background-image: -webkit-linear-gradient(
-		rgb(41, 43, 53),
-		rgb(38, 42, 61),
-		rgba(35, 43, 114, 0.411),
-		rgba(35, 43, 114, 0.527),
-		rgba(35, 43, 114, 0.411),
-		rgb(38, 42, 61),
-		rgb(41, 43, 53)
-	);*/
-
 	padding: 8vw 5vw;
 	padding-bottom: 2vw;
 	h1 {
