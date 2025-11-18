@@ -14,7 +14,7 @@
 	--limegreen: rgb(95, 206, 151);
 }
 
-.divspace {
+logo .divspace {
 	height: 200px;
 }
 
@@ -175,13 +175,18 @@ body .click a {
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 .projects:hover {
+	transition: ease 0.7s;
+	h1 {
+		letter-spacing: 1.5px;
+		transition: ease 0.7s;
+	}
 }
-
 .projects h1 {
 	color: rgb(209, 208, 208);
 	text-align: center;
 	padding-top: 2vw;
 	padding-bottom: 20px;
+	transition: 0.7s;
 }
 .wrapper {
 	width: 100%;
@@ -245,7 +250,7 @@ body .click a {
 }
 
 .card[for="c1"] {
-	background-image: url(../images/bgd2.jpg);
+	background-image: url(../images/background-image.jpg);
 }
 .card[for="c2"] {
 	background-image: url(../images/roofing.jpeg);
@@ -1407,7 +1412,7 @@ button:hover {
 
 .logo-tile:hover {
 	transform: translateY(-8px) scale(1.5);
-
+	cursor: text;
 	transition: 0.5s;
 }
 

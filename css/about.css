@@ -16,39 +16,109 @@
 	--limegreen: rgb(95, 206, 151);
 }
 
-.about-me {
+.about-ww {
+	display: flex;
+	width: 100%;
+	height: 100vh;
 	background-color: transparent;
 	text-align: center;
-	padding: 80px;
-	padding-top: 100px !important;
 	padding-bottom: 10vw;
-	transition: 0.7s;
+	align-items: center;
+	justify-content: center;
+	transition: ease-in-out 0.7s;
 
 	h2 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 500;
 		margin-bottom: 3rem;
 		text-align: center;
 		width: 100%;
+		transition: 0.7s;
 	}
-	p {
+
+	.about-p {
 		padding: 0px 12vw;
 		font-size: 1.5vw;
 		font-weight: 300;
 		color: #a0a0b6;
-		transition: 0.7s;
+		text-align: center;
+		width: 100%;
+
+		transition: ease-in-out 0.05s;
 	}
-}
-.about-me:hover {
-	h3 {
-		letter-spacing: 14px;
-		transition: 2s;
-	}
-	p {
-		transition: 0.7s;
+	.about-sec {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
+.about-wr {
+	width: 90%;
+	height: 40%;
+	transition: 0.7s;
+	h2 {
+		transition: 1.2s;
+	}
+	.about-p {
+		font-size: 1.5vw;
+		font-weight: 300;
+		padding: 0px 30px;
+		font-size: 1.5vw;
+		font-weight: 300;
+		transition: 0.5s;
+		/*animation-name: glowp2;
+		animation-duration: 0.9s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in-out;*/
+	}
+}
+
+.about-ww:hover {
+	transition: 0.4s;
+	padding: 0px;
+	h2 {
+		letter-spacing: 12px;
+		transition: 1.2s;
+		font-size: 0.9rem;
+	}
+
+	a p {
+		color: var(--lime) !important;
+	}
+
+	.about-sec {
+		width: 100%;
+	}
+	.about-wrww {
+		transition: 0.4s;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+	}
+}
+.about-wr:hover {
+	height: 100%;
+	background-color: var(--wblue);
+	display: flex;
+	align-items: center;
+
+	transition: ease-in-out 0.7s;
+	.about-p {
+		padding: 0px 30px;
+		font-size: 1.55vw;
+		font-weight: 300;
+		transition: 0.3s;
+		animation-name: glowp;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in-out;
+	}
+}
 .projects {
 	padding: 80px 40px;
 	display: flex;
@@ -62,7 +132,7 @@
 	border: none;
 	padding: 1rem 2rem;
 	font-family: "Inter Tight";
-
+	text-shadow: none;
 	cursor: pointer;
 	text-transform: lowercase;
 	width: 100%;
@@ -77,6 +147,10 @@
 .about-btn:hover {
 	letter-spacing: 5px;
 	transition: 0.7s;
+
+	p {
+		font-size: 1rem !important;
+	}
 }
 @media screen and (max-width: 1000px) {
 	.about-me {
@@ -165,6 +239,20 @@ section a {
 }
 
 /**Animations*/
+
+@keyframes glowp {
+	0% {
+		color: rgba(0, 128, 0, 0);
+		box-shadow: inset 3px -225px 165px -65px rgba(0, 140, 255, 0);
+	}
+}
+
+@keyframes glowp2 {
+	0% {
+		color: rgba(0, 128, 0, 0);
+		box-shadow: inset 3px -225px 165px -65px rgba(0, 140, 255, 0);
+	}
+}
 
 @keyframes glow1 {
 	0% {
