@@ -1,0 +1,233 @@
+/* Reset and base styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: #ffffff; /* White background */
+	color: #000000; /* Black text */
+	overflow-x: hidden;
+}
+
+/* Header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 70px;
+}
+
+header .logo {
+	font-size: 1.8rem;
+	font-family: "montserrat", "Poppins", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	text-transform: ;
+	letter-spacing: 2px;
+	color: #2e00d6; /* Black text */
+	text-shadow: none; /* Remove shadow for a clean look */
+}
+
+header nav a {
+	margin: 0 15px;
+	text-decoration: none;
+	color: #2e00d6; /* Black text */
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: "Inter Tight", sans-serif; /* Keep navbar font clean */
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover {
+	color: #9900ff; /* Dark gray hover effect */
+	transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	margin: 0;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-image img {
+	width: 150px;
+}
+
+.hero h1 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	color: black; /* Black text */
+	font-family: "montserrat", "Aladin", "Chalkboard SE", sans-serif; /* Playful font */
+	text-shadow: none; /* Remove shadow */
+	margin-top: 15px;
+}
+
+.hero p {
+	font-size: 1rem;
+	margin: 0px 0;
+	max-width: 600px;
+	color: #333333; /* Dark gray for contrast */
+	font-family: "Poppins", "Chalkboard SE", sans-serif; /* Playful font */
+}
+
+.hero .cta {
+	margin-top: 40px;
+	margin-right: 0px;
+	width: 90%;
+}
+
+.hero .cta a {
+	float: right;
+	text-decoration: none;
+	padding: 8px 40px;
+	background: #2e00d6; /* Black button */
+	color: #ffffff; /* White text */
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: "Inter Tight", sans-serif; /* Clean font for buttons */
+	border-radius: 4px;
+	/*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
+	transition: all 0.3s ease;
+}
+
+.hero .cta a:hover {
+	transform: scale(1.03);
+	background-color: #9900ff;
+	transition: all 0.3s ease;
+}
+
+/* Features Section */
+.features {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 50px 20px;
+	background: #f9f9f9; /* Light gray background for contrast */
+	border-radius: 20px;
+	margin: 50px auto;
+	max-width: 1200px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	animation: slideUp 1.5s ease-in-out;
+}
+
+.feature {
+	flex: 1 1 300px;
+	margin: 20px;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+	width: 80px;
+	margin-bottom: 20px;
+}
+
+.feature h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	color: #000000; /* Black text */
+	font-family: "Comic Sans MS", "Chalkboard SE", sans-serif; /* Playful font */
+	text-shadow: none; /* Remove shadow */
+}
+
+.feature p {
+	font-size: 1rem;
+	color: #555555; /* Dark gray text */
+	font-family: "Comic Sans MS", "Chalkboard SE", sans-serif; /* Playful font */
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	padding: 20px;
+	background: #ffffff; /* Light gray background */
+	color: #000000; /* Black text */
+	font-size: 0.9rem;
+	/*border-top: 2px solid #e0e0e0;  Subtle border 
+	box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+footer a {
+	color: #000000; /* Black text */
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+footer a:hover {
+	color: #555555; /* Dark gray hover effect */
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		display: none;
+	}
+
+	header {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 40px 0px !important;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	header nav a {
+		font-size: 2.5vw;
+	}
+}
+
+@media screen and (max-width: 635px) {
+	header nav a {
+		text-decoration: none;
+		color: #2e00d6; /* Black text */
+		font-size: 2.8vw;
+		font-weight: 500;
+		font-family: "Inter Tight", sans-serif; /* Keep navbar font clean */
+		transition: color 0.3s ease, transform 0.3s ease;
+	}
+}
+
+/* Animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

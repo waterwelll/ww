@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Subscribe</title>
+	</head>
+	<body>
+		<div class="auth-modal">
+			<div class="close-icon">x</div>
+			<h2>Sign Up</h2>
+			<p>
+				By signing up you are agreeing to our terms and conditions. Learn about
+				our Privacy Policy before clicking submit.
+			</p>
+
+			<form>
+				<input
+					type="text"
+					id="username"
+					name="username"
+					placeholder="username"
+				/>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					placeholder="password"
+				/>
+				<input
+					type="password"
+					id="password-check"
+					name="password-check"
+					placeholder="confirm password"
+				/>
+				<label class="tandc" for="tandc">
+					<input type="checkbox" id="tandc" name="tandc" />
+					I agree to the terms and conditions.
+				</label>
+				<input type="submit" class="form-button" value="Submit" />
+			</form>
+
+			<hr />
+			<div class="link-container">
+				
+				<a href="http://play.google.com/store" target="_blank">
+					<img src="assets/google-play-button.PNG" alt="" loading="lazy" />
+				</a>
+				<a href="http://www.apple.com/store" target="_blank">
+					<img src="assets/app-store-button.PNG" alt="" loading="lazy" />
+				</a>
+
+				<h2>download the app</h2>
+
+			</div>
+		</div>
+		<script>
+            window.addEventListener('load', function() {
+                document.body.classList.add('loaded');
+            });
+        </script>
+    </body>
+</html>

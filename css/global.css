@@ -1,0 +1,360 @@
+:root {
+	--lime: rgb(151, 216, 47);
+	--wblue: rgb(32, 0, 173);
+	--blue: rgb(108, 122, 247);
+	--blue2: rgb(75, 92, 245);
+	--blue3: rgb(48, 68, 245);
+	--lime2: rgb(120, 153, 0);
+	--lime3: rgb(72, 92, 2);
+	--grey: rgb(17, 17, 17);
+	--white: rgb(182, 182, 182);
+	--bluegrey: rgb(41, 43, 53);
+	--limegreen: rgb(95, 206, 151);
+}
+
+* {
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-width: none;
+}
+html {
+	font-family: "montserrat";
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: ;
+}
+
+nav {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 14vh;
+	align-items: center;
+}
+
+nav:hover {
+	transition: 0.4s;
+}
+
+nav .nav-container {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	height: 14vh;
+}
+
+nav .menu-container {
+	position: relative;
+
+	width: 100%;
+}
+
+nav .menu-container .nav-links {
+	width: 100%;
+	text-align: right;
+	margin: -10px 0px 0px -3.5vw;
+}
+
+nav .menu-container .nav-space {
+	display: block;
+	width: 90%;
+}
+
+nav .menu-container img {
+	height: 30px;
+}
+
+nav .tech-container img {
+	height: 20px;
+	padding: 4px;
+}
+
+nav a {
+	font-size: 1.1vw;
+	font-family: "Advent Pro", "Inter Tight", montserrat, system-ui, -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+}
+
+nav .name {
+	color: rgb(179, 179, 179);
+	letter-spacing: 2px;
+	margin: 0 30px 0px 10px;
+	font-family: "Advent Pro", "Inter Tight", montserrat, system-ui, -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 1.6vw;
+	font-weight: 400;
+	align-content: center;
+	width: 100%;
+	align-items: end;
+	padding: 30px;
+}
+nav .name,
+a {
+	text-decoration: none;
+}
+
+nav .name:hover {
+	color: rgb(22, 2, 133);
+	cursor: pointer;
+}
+
+nav .logo {
+	height: 30px;
+	margin: 0 10px 0 0;
+	padding: 10px;
+}
+
+nav .nav-link {
+	color: rgb(179, 179, 179);
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 3px;
+}
+
+nav .nav-link:hover {
+	background-color: ;
+	cursor: pointer;
+	transition-duration: 0s;
+	transition-delay: 0ms;
+}
+.nav-link,
+a:hover {
+	color: rgb(22, 2, 133);
+}
+
+.nav-link,
+a:active {
+	color: rgb(59, 59, 59);
+}
+
+nav .hamburger {
+	display: none;
+}
+
+#work h1 {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 1.8vw;
+	color: var(--blue);
+	padding-bottom: 80px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.hamburger-list-container {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	nav .name {
+		visibility: visible;
+	}
+}
+
+@media (max-width: 600px) {
+	.menu-container {
+		display: ;
+	}
+
+	.nav-container {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	nav .hamburger {
+		display: block;
+		background-color: transparent;
+		border: none;
+		color: rgb(206, 206, 206);
+		font-size: 15px;
+		padding: 20px;
+
+		box-shadow: none;
+		float: right;
+		margin-right: 30px;
+	}
+	nav .hamburger:hover {
+		display: block;
+		background-color: transparent;
+		border: none;
+		color: var(--wblue);
+		font-size: 14px;
+		box-shadow: none;
+		animation: none;
+	}
+	nav .hamburger:active {
+		color: rgb(206, 206, 206);
+	}
+	.menu-container .nav-links {
+		display: none;
+	}
+	.hamburger-list-container {
+		display: block;
+		position: relative;
+		height: 25vh;
+		width: 16vw;
+		background-color: rgba(32, 35, 56, 0);
+
+		margin-top: -25px;
+		margin-right: 30px;
+		border-radius: 6px;
+		float: right;
+		a {
+			text-align: right;
+		}
+	}
+
+	nav .nav-link {
+		color: rgb(206, 206, 206);
+		text-decoration: none;
+		padding: 8px 12px;
+		border-radius: 6px;
+		display: flex;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+
+	nav .nav-link:hover {
+		color: var(--wblue);
+		background-color: transparent;
+		transition-duration: 0s;
+		transition-delay: 0ms;
+	}
+	.nav-link,
+	a:hover {
+		color: white;
+	}
+
+	nav .menu-container .nav-space {
+		display: none;
+	}
+}
+
+nav .hamburger-list-container .nav-link {
+	display: block;
+}
+
+footer {
+	background-color: rgb(223, 223, 223);
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+	border-top: 0.1px solid rgba(55, 55, 141, 0.185);
+}
+
+footer .coright {
+	color: rgb(180, 179, 179);
+	font-size: 0.8vw;
+}
+
+section {
+	color: rgb(216, 216, 216);
+}
+
+section a {
+	text-decoration: none;
+}
+
+section h6 {
+	font-size: 1vw;
+	font-family: "krona one";
+}
+
+h1 {
+	font-size: 3.55vw;
+	font-family: "krona one";
+	margin: 0;
+}
+
+h2 {
+	font-size: 2.2vw;
+	font-family: "krona one";
+}
+
+h3 {
+	font-size: 2.2vw;
+	font-family: "krona one";
+}
+
+h4 {
+	font-size: 1vw;
+	font-family: "montserrat";
+}
+
+h7 {
+	font-size: 3.55vw;
+	position: absolute;
+	width: 72%;
+	text-align: left;
+	font-family: "krona one";
+	color: var(--lime);
+	text-shadow: 0px 0px 15px black;
+	transition: 0.7s;
+}
+h7:hover {
+	letter-spacing: 0.1vw;
+	transition: 0.7s;
+	cursor: pointer;
+}
+
+p {
+	font-size: 1.2vw;
+}
+
+.scroll {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.281);
+	z-index: 1;
+	width: 100%;
+	margin-right: -30vw;
+	margin-top: 8vw;
+	font-family: Jetbrains Mono;
+	font-size: 1vw;
+	font-weight: 100;
+}
+
+pre {
+	font-size: 1.2vw;
+	color: white;
+}
+
+@media screen and (max-width: 1000px) {
+	nav a {
+		font-size: 1.6vw;
+		font-weight: 500;
+	}
+
+	nav .name {
+		font-size: 2.5vw;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.nav-container {
+		padding: 10px !important;
+		height: 10vh !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav a {
+		font-size: 2.6vw;
+		font-weight: 500;
+	}
+
+	nav .name {
+		font-size: 3.2vw;
+		font-weight: 400;
+	}
+}
+
+}

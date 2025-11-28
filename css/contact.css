@@ -1,0 +1,255 @@
+:root {
+	--grey: rgb(17, 17, 17);
+	--white: rgb(182, 182, 182);
+	--lime: rgb(151, 216, 47);
+	--wblue: rgb(32, 0, 173);
+	--blue: rgb(108, 122, 247);
+	--blue2: rgb(75, 92, 245);
+	--blue3: rgb(48, 68, 245);
+	--lime2: rgb(120, 153, 0);
+	--lime3: rgb(72, 92, 2);
+	--accentcolor: rgb(161, 189, 179);
+	--grey: rgb(17, 17, 17);
+	--white: rgb(182, 182, 182);
+	--purple: rgb(231, 111, 255);
+	--lightgrey: rgb(209, 208, 208);
+	--limegreen: rgb(95, 206, 151);
+}
+
+.cont {
+	transition: 0.7s;
+}
+
+.divspace {
+	height: 100px;
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.contact-section {
+	text-align: center;
+	padding: 250px;
+	background-color: transparent;
+}
+
+.contact-section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+section .info-line {
+	font-size: 22px;
+	a {
+		color: rgb(233, 227, 110);
+	}
+}
+
+section ul a {
+	color: rgb(233, 227, 110);
+}
+
+section {
+	font-size: 20px;
+}
+
+/* Contact Section */
+.contact {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0rem 0rem;
+	transition: 0.7s;
+	margin: 0;
+
+	h2 {
+		transition: 0.7s;
+	}
+}
+.contact:hover {
+	transition: 0.7s;
+	h2 {
+		letter-spacing: 2px;
+		transition: 0.7s;
+	}
+}
+
+.contact-container {
+	/* Set a consistent width for the container */
+	margin: 0; /* Center the container horizontally */
+	text-align: center; /* Center text inside the container */
+}
+
+.contact-container h2 {
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 3rem;
+	text-align: center;
+	width: 100%; /* Ensure the header spans the full width of the container */
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column; /* Stack inputs vertically */
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+	contain: content;
+	width: 70vw !important; /* Ensure the form spans the full width of the container */
+}
+
+.form-group {
+	padding: 0;
+	margin: 0;
+}
+.form-group input,
+.form-group textarea {
+	width: 100%; /* Ensure inputs and textarea span the full width of the container */
+	padding: 1rem;
+	background-color: rgb(240, 240, 240);
+	border: 1px solid var(--black);
+	font-family: inherit;
+	font-size: 0.8rem;
+	transition: 0.7s;
+	margin: 0 !important;
+	box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.form-group input {
+	color: rgb(128, 128, 128);
+}
+.form-group textarea {
+	color: rgb(128, 128, 128);
+}
+
+.form-group input:hover {
+	letter-spacing: 2px;
+	transition: 0.7s;
+}
+.form-group textarea:hover {
+	letter-spacing: 2px;
+	transition: 0.7s;
+}
+
+.contact-form input:active {
+	border: 1px solid rgb(252, 0, 0);
+}
+
+.form-group textarea {
+	height: 150px;
+	resize: vertical;
+}
+
+.submit-btn {
+	background: transparent;
+	color: var(--white);
+	border: none;
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	font-family: "Inter Tight";
+	font-weight: 500;
+	cursor: pointer;
+	text-transform: lowercase;
+	width: 100%; /* Make the button span the full width */
+	transition: 0.7s;
+}
+
+.submit-btn:hover {
+	font-size: 1rem;
+	letter-spacing: 2px;
+	transition: 0.7s;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column; /* Stack contact info vertically */
+	align-items: center; /* Center items horizontally */
+	gap: 1rem;
+	padding: 2rem;
+}
+
+.contact-info a {
+	font-size: 1.1rem;
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+.contact-info a:hover {
+	color: var(--secondary);
+}
+
+footer a {
+	text-decoration: none;
+	color: rgb(179, 179, 179);
+}
+
+footer {
+	border: none;
+}
+
+@media screen and (max-width: 1000px) {
+	.contact-section {
+		padding: 250px 100px;
+	}
+	.contact-image img {
+		width: 70%;
+		position: absolute;
+		justify-content: center;
+		background-size: contain;
+		padding: 20px;
+		border-radius: 30px;
+		margin-top: -60px;
+		opacity: 80%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contact-container {
+		max-width: 90%; /* Reduce the width for smaller screens */
+		margin: 0 auto; /* Center the container horizontally */
+		text-align: center; /* Center text inside the container */
+	}
+
+	.contact-container h2 {
+		font-size: 1.8rem; /* Adjust font size for smaller screens */
+		margin-bottom: 2rem; /* Reduce spacing */
+		text-align: center;
+	}
+
+	.contact-form {
+		width: 100%; /* Ensure the form spans the full width of the container */
+		margin: 0 auto; /* Center the form horizontally */
+		gap: 1rem; /* Reduce spacing between inputs */
+	}
+
+	.form-group input,
+	.form-group textarea {
+		width: 100%; /* Ensure inputs and textarea span the full width of the container */
+		padding: 0.8rem; /* Adjust padding for smaller screens */
+		box-sizing: border-box; /* Include padding and border in width calculation */
+	}
+
+	.submit-btn {
+		width: 100%; /* Ensure the button spans the full width */
+		padding: 0.8rem; /* Adjust padding for smaller screens */
+	}
+}
+
+@media screen and (max-width: 538px) {
+	.contact-section {
+		padding: 250px 50px;
+	}
+	.contact-image h3 {
+		margin-top: -15px;
+	}
+	.contact-info {
+		flex-direction: column;
+		gap: 1rem;
+		align-items: center;
+	}
+}

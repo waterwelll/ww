@@ -1,0 +1,128 @@
+* {
+	font-family: "Trebuchet MS";
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-image: url("assets/bgimage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+p {
+	font-size: 15px;
+}
+
+.auth-modal {
+	zoom: 90%;
+	background-color: rgb(224, 224, 224);
+	margin: 80px;
+	width: 370px;
+	height: 570px;
+	border-radius: 10px;
+	padding: 40px;
+	box-shadow: rgba(0, 0, 0, 0.342) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+.auth-modal form {
+	display: flex;
+	flex-direction: column;
+}
+
+.auth-modal input {
+	padding: 8px;
+	margin: 8px;
+	font-size: 17px;
+	border-radius: 4px;
+	border-color: rgba(165, 165, 165, 0.096);
+	background-color: rgb(195, 195, 195);
+	outline: none;
+}
+
+.auth-modal .form-button {
+	color: rgb(235, 235, 235);
+	font-family: montserrat;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 12px 30px;
+	border-radius: 30px;
+	margin: 6px;
+	border: rgb(255, 255, 255) solid 2px;
+	background: linear-gradient(45deg, rgb(185, 48, 254), rgb(255, 64, 153));
+}
+
+.auth-modal .form-button:hover {
+	color: rgba(137, 31, 236, 0.774);
+	font-weight: 700;
+	border: rgba(48, 48, 48, 0.493) solid 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.auth-modal .link-container {
+	padding-top: 10px;
+}
+
+.auth-modal .link-container img {
+	width: 130px;
+	margin: 6px;
+	border-radius: 5px;
+	border: 8px solid black;
+}
+
+.auth-modal .link-container a {
+	text-decoration: none;
+}
+
+.close-icon {
+	float: right;
+}
+.close-icon:hover {
+	cursor: pointer;
+}
+
+.tandc {
+	padding-top: 10px;
+}
+
+.tandc:hover {
+	cursor: pointer;
+}
+
+input[type="text"]:hover {
+	padding: 8px;
+	margin: 8px;
+	font-size: 17px;
+	border-radius: 4px;
+
+	background-color: rgba(211, 211, 211, 0.425);
+	transition: 0.4s;
+}
+
+input[type="password"]:hover {
+	padding: 8px;
+	margin: 8px;
+	font-size: 17px;
+
+	background-color: rgba(211, 211, 211, 0.425);
+	outline: none;
+	transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+	.auth-modal .link-container img {
+		width: 17vw;
+		margin: 6px;
+		border-radius: 5px;
+	}
+}
