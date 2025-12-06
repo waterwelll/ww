@@ -70,8 +70,10 @@ body .click a {
 	height: 90vh;
 }
 .click:hover {
-	cursor: cell;
-	zoom: 101%;
+	cursor: pointer;
+	img {
+		width: 12vw;
+	}
 
 	.section-wrapper {
 		background-color: black !important;
