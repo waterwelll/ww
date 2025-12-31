@@ -150,12 +150,12 @@ body .click a {
 	padding: 0;
 	padding-top: 10vw;
 	padding-bottom: 10vw;
-	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-family: "Montserrat", "Century Gothic", Arial, Helvetica, sans-serif;
 }
 .projects:hover {
 	transition: ease 0.7s;
 	h1 {
-		letter-spacing: 1.5px;
+		letter-spacing: 2.5px;
 		transition: ease 0.7s;
 	}
 }
@@ -189,9 +189,8 @@ body .click a {
 }
 
 .container:hover {
-	height: 402px;
-	background-color: rgb(31, 1, 201);
-	box-shadow: 0px 10px 50px -5px rgba(168, 91, 255, 0.637);
+	background-color: rgb(34, 2, 214);
+	box-shadow: 0px 10px 50px -5px rgba(91, 129, 255, 0.842);
 	transition: 0.7s;
 
 	.hint {
@@ -512,7 +511,7 @@ button:hover {
 	padding-bottom: 5vw;
 }
 .services-container h1 {
-	color: rgb(202, 202, 202);
+	color: #cacaca;
 	font-size: 2rem;
 	font-family: "Inter Tight";
 	font-weight: 500;
@@ -538,10 +537,10 @@ button:hover {
 }
 .services-card h4 {
 	font-size: 1.3vw;
-	font-weight: 600;
+	font-weight: 500;
 	width: 94%;
 	text-align: left;
-	color: rgb(156, 156, 156);
+	color: rgb(194, 194, 194);
 }
 .services-card p {
 	font-size: 1.2vw;
@@ -668,6 +667,18 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	transition: 0.6s;
+
+	.about-p {
+		transition: 0.6s;
+	}
+
+	.quote {
+		transition: 0.6s;
+	}
+	h2 {
+		transition: 0.6s;
+	}
 }
 .about-section:hover {
 	/*animation-name: glowquote;
@@ -680,13 +691,21 @@ button:hover {
 		rgb(242, 255, 58)
 	);*/
 
+	.about-p {
+		letter-spacing: 0px !important;
+		transition: 0.6s;
+	}
+
 	.quote {
 		color: rgba(0, 170, 162, 0.267);
-		transition: 0.7s;
+		letter-spacing: 0.4px;
+		transition: 0.6s;
 	}
 	h2 {
 		color: rgba(0, 161, 161, 0.541);
-		transition: 0.7s;
+		letter-spacing: 0.4px;
+		font-size: 1.8vw;
+		transition: 0.6s;
 	}
 }
 .quote-container {
@@ -695,6 +714,7 @@ button:hover {
 }
 .quote-container .quote {
 	font-size: 3.4vw;
+	color: #f0f0f0;
 }
 .about-container {
 	width: 40vw;
@@ -787,6 +807,10 @@ button:hover {
 		color: var(--wblue);
 		transition: 0.7s;
 	}
+}
+.about-btn .btn-p:hover {
+	letter-spacing: 2px !important;
+	transition: 0.7s;
 }
 
 /**WorkCardGlow*/
